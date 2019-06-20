@@ -14,15 +14,15 @@ df=pd.read_csv('data_vis1.csv')
 
 df
 
-plt.xlabel('Marks')
+plt.title('Marks')
 plt.pie(df['marks'],labels=df['st_name'],autopct='%1.1f%%')
 plt.show()
 print("----------------------------------------------------------")
-plt.xlabel('Age')
+plt.title('Age')
 plt.pie(df['age'],labels=df['st_name'],autopct='%1.1f%%')
 plt.show()
 print("----------------------------------------------------------")
-plt.xlabel('Study Hours')
+plt.title('Study Hours')
 plt.pie(df['st_hours'],labels=df['st_name'],autopct='%1.1f%%')
 plt.show()
 
